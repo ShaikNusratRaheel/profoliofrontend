@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website || Coding Zone</title>
+    <link rel="stylesheet" href="portfolio.css" />
+    <link rel="stylesheet" href="../navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="l-navbar" id="navbar">
+        <nav class="nav">
+          <div>
+            <div class="nav__brand">
+              <ion-icon name="menu-outline" class="nav__toggle" id="nav-toggle"></ion-icon>
+              <a href="#" class="nav__logo">Navigation</a>
+            </div>
+            <div class="nav__list">
+              <a href="studenthome.html" class="nav__link active">
+                <ion-icon name="home-outline" class="nav__icon"></ion-icon>
+                <span class="nav__name">Dashboard</span>
+              </a>
+              
+              <div class="nav__link collapse">
+                <ion-icon name="folder-outline" class="nav__icon"></ion-icon>
+                <span class="nav__name">Manage Projects</span>
+                <ion-icon name="chevron-down-outline" class="collapse__link"></ion-icon>
+                <ul class="collapse__menu">
+                  <a href="uploadproject.html" class="collapse__sublink">Upload Projects</a>
+                  <a href="#" class="collapse__sublink">Upload Media</a>
+                  <a href="viewprojects.html" class="collapse__sublink">View Projects</a>
+                </ul>
+              </div>
+              <a href="portfolio.html" class="nav__link">
+                <ion-icon name="pie-chart-outline" class="nav__icon"></ion-icon>
+                <span class="nav__name">PortFolio</span>
+              </a>
+              <a href="#" class="nav__link">
+                  <ion-icon name="chatbubbles-outline" class="nav__icon"></ion-icon>
+                  <span class="nav__name">Feedback</span>
+                </a>
+              <a href="#" class="nav__link">
+                <ion-icon name="settings-outline" class="nav__icon"></ion-icon>
+                <span class="nav__name">Settings</span>
+              </a>
+            </div>
+          </div>
+          <a href="../login.html" class="nav__link">
+            <ion-icon name="log-out-outline" class="nav__icon"></ion-icon>
+            <span class="nav__name">Log Out</span>
+          </a>
+        </nav>
+      </div>
+    <div class="container">
+        <div class="container-wrapper">
+            <div class="home" id="Home">
+                <div class="home-content"> <img src="../images/photo_2024-05-09_21-48-08.jpg" class="profile-image" />
+                    <div class="name">
+                        <p>Sriram Jagu</p>
+                        <p>Full Stack Developer</p>
+                    </div>
+                    <div class="social-media">
+                        <ul>
+                            <li> <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a> </li>
+                            <li> <a href="#" target="_blank"><i class="fab fa-instagram"></i></a> </li>
+                            <li> <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a> </li>
+                            <li> <a href="#" target="_blank"><i class="fab fa-github"></i></a> </li>
+                        </ul>
+                    </div> <a href="#" target="_blank" class="btn-resume"> <i class="fas fa-download"></i> Download Resume</a>
+                </div>
+            </div> <!-- About Section-->
+            <div class="about" id="About">
+                <h2>About Me</h2> <!--About content-->
+                <div class="about-wrapper"> <!--Left Div-->
+                    <div class="left-about">
+                        <p> Hi I'm Full Stack Developer,passionate about creating and developing web application. </p>
+                        <div class="about-image">
+                            <div class="image-border"></div> <img src="../images/sriram.jpg" />
+                        </div>
+                    </div> <!--Right Div-->
+                    <div class="right-about">
+                        <div class="information">
+                            <h3>Information</h3> <!--inside Information div-->
+                            <div class="info"> <!--Inside info Div-->
+                                <div class="info-data"> <i class="fas fa-user"></i>
+                                    <p>Sriram Jagu</p>
+                                </div>
+                                <div class="info-data"> <i class="fas fa-phone-alt"></i>
+                                    <p>9032951175</p>
+                                </div>
+                                <div class="info-data"> <i class="fas fa-envelope"></i>
+                                    <p>jagusriram2004@gmail.com</p>
+                                </div>
+                            </div> <br /> <!--Inside information div-->
+                            <div class="Experience">
+                                <h3>Internships</h3> <!--Inside Experience Div-->
+                                <div class="exp"> <!--Inside exp div-->
+                                    <div class="info-data"> <i class="fas fa-medal"></i>
+                                        <div>
+                                            <p>Google Summer SDE Internship</p>
+                                            <p> Worked as a Summer Intern for Google for a 6 month span time period in year 2023-24. Gained Insightful industrial Experience and improved Collaborativeness and team working skills</p>
+                                        </div>
+                                    </div>
+                                    <div class="info-data"> <i class="fas fa-suitcase"></i>
+                                        <div>
+                                            <p>2 Projects</p>
+                                            <p>Completed</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--Skills Section-->
+            <div class="skills" id="Skills">
+                <h2>My Expertise Area</h2> <!--Technology -->
+                <div class="technologies">
+                    <div class="frontend">
+                        <div class="frontend-data">
+                            <h3>Frontend</h3>
+                            <div class="frontend-tech">
+                                <div>
+                                    <p><span>HTML/CSS</span><span>80%</span></p>
+                                    <div></div>
+                                </div>
+                                <div>
+                                    <p><span>Javascript</span><span>70%</span></p>
+                                    <div></div>
+                                </div>
+                                <div>
+                                    <p><span>Jquery</span><span>80%</span></p>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backend">
+                        <div class="backend-data">
+                            <h3>Backend</h3>
+                            <div class="backend-tech">
+                                <div>
+                                    <p><span>Java</span><span>80%</span></p>
+                                    <div></div>
+                                </div>
+                                <div>
+                                    <p><span>JSP/Servlet</span><span>80%</span></p>
+                                    <div></div>
+                                </div>
+                                <div>
+                                    <p><span>Hibernate/Spring</span><span>70%</span></p>
+                                    <div></div>
+                                </div>
+                                <div>
+                                    <p><span>Spring Boot</span><span>70%</span></p>
+                                    <div></div>
+                                </div>
+                                <div>
+                                    <p><span>Mysql</span><span>80%</span></p>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="work" id="Work">
+                <h2>My Projects</h2>
+                <div class="recent-work">
+                    <div> <img src="../images/images.png" /> <span><a href="#" target="_blank">Demo</a></span> <label>Learing Management System</label> </div>
+                    <div> <img src="../images/donations.png" /> <span><a href="#" target="_blank">Demo</a></span> <label>Online Donation Service</label> </div>
+                    <div> <img src="../images/hospital.png" /> <span><a href="#" target="_blank">Demo</a></span> <label>Hospital Management System</label> </div>
+                  
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="portfolio.js"></script>
+    <script src="../script.js"></script>
+</body>
+
+</html>

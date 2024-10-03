@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="../navbar.css">
+        <link rel="stylesheet" href="home.css">
+        <title>Sidebar sub menus</title>
+    </head>
+    <body id="body-pd">
+        <div class="l-navbar" id="navbar">
+            <nav class="nav">
+              <div>
+                <div class="nav__brand">
+                  <ion-icon name="menu-outline" class="nav__toggle" id="nav-toggle"></ion-icon>
+                  <a href="#" class="nav__logo">Navigation</a>
+                </div>
+                <div class="nav__list">
+                  <a href="studenthome.html" class="nav__link active">
+                    <ion-icon name="home-outline" class="nav__icon"></ion-icon>
+                    <span class="nav__name">Dashboard</span>
+                  </a>
+                  
+                  <div class="nav__link collapse">
+                    <ion-icon name="folder-outline" class="nav__icon"></ion-icon>
+                    <span class="nav__name">Manage Projects</span>
+                    <ion-icon name="chevron-down-outline" class="collapse__link"></ion-icon>
+                    <ul class="collapse__menu">
+                      <a href="uploadproject.html" class="collapse__sublink">Upload Projects</a>
+                      <a href="#" class="collapse__sublink">Upload Media</a>
+                      <a href="viewprojects.html" class="collapse__sublink">View Projects</a>
+                    </ul>
+                  </div>
+                  <a href="portfolio.html" class="nav__link">
+                    <ion-icon name="pie-chart-outline" class="nav__icon"></ion-icon>
+                    <span class="nav__name">PortFolio</span>
+                  </a>
+                  <a href="#" class="nav__link">
+                      <ion-icon name="chatbubbles-outline" class="nav__icon"></ion-icon>
+                      <span class="nav__name">Feedback</span>
+                    </a>
+                  <a href="#" class="nav__link">
+                    <ion-icon name="settings-outline" class="nav__icon"></ion-icon>
+                    <span class="nav__name">Settings</span>
+                  </a>
+                </div>
+              </div>
+              <a href="../login.html" class="nav__link">
+                <ion-icon name="log-out-outline" class="nav__icon"></ion-icon>
+                <span class="nav__name">Log Out</span>
+              </a>
+            </nav>
+          </div>
+          <section id="content">
+          <main>
+            <div class="head-title">
+              <div class="left">
+                <h1>Welcome, Abhijith</h1>
+              </div>
+            </div>
+      
+            <ul class="box-info">
+              <li>
+                <box-icon type='logo' name='html5'></box-icon>
+                <span class="text">
+                  <h3>7</h3>
+                  <p>Total Projects</p>
+                </span>
+              </li>
+              <li>
+                <box-icon type='solid' name='check-square'></box-icon>
+                <span class="text">
+                  <h3>5</h3>
+                  <p>Completed</p>
+                </span>
+              </li>
+              <li>
+                <box-icon name='cog' ></box-icon>
+                <span class="text">
+                  <h3>2</h3>
+                  <p>in Development</p>
+                </span>
+              </li>
+            </ul>
+      
+      
+            <div class="table-data">
+              <div class="order">
+                <div class="head">
+                  <h3>Recent Projects</h3>
+                  <i class='bx bx-search' ></i>
+                  <i class='bx bx-filter' ></i>
+                </div>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Project No</th>
+                      <th>Project Name</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p>7</p>
+                      </td>
+                      <td>Learning Management System</td>
+                      <td><span class="status pending">Pending</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>6</p>
+                      </td>
+                      <td>Donation Management System</td>
+                      <td><span class="status completed">Completed</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>5</p>
+                      </td>
+                      <td>Cricket Statistic Analyser</td>
+                      <td><span class="status completed">Completed</span></td>
+                    </tr>
+                    
+                  </tbody>
+                </table>
+              </div>
+              <div class="todo">
+                <div class="head">
+                  <h3>Todos</h3>
+                  <i class='bx bx-plus' ></i>
+                  <i class='bx bx-filter' ></i>
+                </div>
+                <ul class="todo-list">
+                  <li class="completed">
+                    <p>Project 7 Deployemt</p>
+                    <i class='bx bx-dots-vertical-rounded' ></i>
+                  </li>
+                  <li class="completed">
+                    <p>PortFolio Update</p>
+                    <i class='bx bx-dots-vertical-rounded' ></i>
+                  </li>
+                  <li class="not-completed">
+                    <p>Upload Media Files for Project 6</p>
+                    <i class='bx bx-dots-vertical-rounded' ></i>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </main>
+          </section>
+        <!-- ===== IONICONS ===== -->
+        <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+        
+        <!-- ===== MAIN JS ===== -->
+        <script src="../script.js"></script>
+    </body>
+</html>

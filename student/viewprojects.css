@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6; /* Improve text readability */
+}
+
+.wrapper {
+    width: 1000px;
+    margin: 20px auto;
+}
+
+.view_main {
+    background: #fff;
+    border-radius: 12px; /* Slightly increased for a smoother look */
+    padding: 30px; /* More padding for a spacious feel */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Deeper shadow for more depth */
+}
+
+.view_item {
+    background: #fff;
+    border: 1px solid #e2efe1;
+    margin: 15px 0; /* Increased vertical margin */
+    padding: 20px; /* More padding */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between title and status */
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.3s, box-shadow 0.3s; /* Add box shadow animation */
+}
+
+.view_item:hover {
+    transform: translateY(-3px); /* Slight lift on hover */
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.vi_right {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Allow right section to grow */
+}
+
+.title {
+    font-weight: 500; /* Adjusted for better hierarchy */
+    font-size: 20px; /* Increased font size for title */
+    color: #333; /* Darker color for contrast */
+    margin-bottom: 8px; /* Spacing below title */
+    text-decoration: none; /* No underline */
+    transition: color 0.3s, transform 0.2s; /* Added transform for hover effect */
+}
+
+.title:hover {
+    color: #4abd3e; /* Change color on hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.content {
+    margin: 5px 0;
+    font-size: 16px; /* Increased font size */
+    line-height: 24px; /* Improved line height */
+    font-weight: 300; /* Lightened the content font */
+    color: #666; /* Slightly lighter color for content */
+}
+
+.status {
+    margin-top: auto; /* Push status to the bottom */
+    font-size: 14px; /* Increased status font size */
+    font-weight: 700; /* Bold for emphasis */
+}
+
+.incomplete {
+    color: orange; /* Color for 'In Development' */
+}
+
+.complete {
+    color: green; /* Color for 'Completed' */
+}
+
+.btn {
+    width: 140px; /* Adjusted button width */
+    background: #4abd3e;
+    padding: 10px 15px; /* More padding for better touch area */
+    border-radius: 5px; /* Slightly larger radius */
+    color: #fff;
+    text-align: center;
+    font-weight: 500; /* Bolder font weight */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth background and transform transition */
+}
+
+.btn:hover {
+    background: #3bd62b; /* Darken button on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+h2 {
+    font-size: 2rem; /* Increased header size */
+    color: #333;
+    font-weight: 700; /* Make header bold */
+    text-align: center;
+    margin-bottom: 20px; /* Spacing below header */
+}
